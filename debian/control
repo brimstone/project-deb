@@ -1,0 +1,6 @@
+Source: blah
+Maintainer: mrobinson@pindropsecurity.com
+
+Package: blah
+Architecture: any
+Description: Blah, the ride, the package

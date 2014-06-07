@@ -1,0 +1,23 @@
+#! /usr/bin/make -f
+
+# First this is called
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+# Second, this is called
+build:
+	@echo "Nothing to build"
+
+# Third, this is called
+binary:
+	dh_testdir
+	dh_testroot
+	dh_installdeb
+
+	uptime > debian/blah/uptime.txt
+
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
